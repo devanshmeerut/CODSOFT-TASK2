@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:"Poppins",sans-serif;
+    box-sizing:border-box;
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    background-color: rgb(221, 140, 174);
+    padding:10px;
+
+}
+
+.todo-app{
+    width:100%;
+    max-width:530px;
+    background:#fff;
+    margin:100px auto ;
+    padding:40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app img{
+    width:50px;
+    margin-left:300px;
+}
+
+.todo-app h2{
+
+    color:rgb(223, 121, 49);
+    display:flex;
+    align-items: center;
+    margin-bottom:20px;
+    margin-left:17px;
+    font-size:19px;
+
+}
+
+.row{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:rgb(243, 218, 218);
+    border-radius:10px;
+    padding-left: 20px;
+    margin-bottom:130px;
+    margin-top:30px;
+    min-height: 10vh;
+}
+
+input{
+    flex:10;
+    border:none;
+    outline:none;
+    padding:1px;
+    font-weight:10px;
+    min-height:7vh;
+    border-radius:30px;
+    margin-right: 7px;
+
+}
+
+button{
+    border:none;
+    outline:none;
+    padding:3px 3px 3px 3px;
+    background-color: rgb(227, 87, 122);
+    color:rgb(241, 242, 235);
+    cursor:pointer;
+    border-radius:15%;  
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+
+ul li{
+    list-style: none;
+    font-size:17px;
+    padding:12px 8px 12px 50px;
+    user-select:none;
+    cursor:pointer;
+    position: relative;
+    color:rgb(132, 48, 121)
+}
+
+ul li::before{
+    content:'';
+    position:absolute;
+    height: 17px;
+    width: 17px;
+    border-radius:50%;
+    background-image: url("https://icons.veryicon.com/png/o/miscellaneous/wens/uncheck.png");
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left:8px;
+
+}
+
+ul li.checked{
+    color:#dd1a1a;
+    text-decoration:line-through;
+
+}
+
+ul li.checked::before{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Purple_check.svg/600px-Purple_check.svg.png?20190831140458");
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top : 3px;
+    width: 30px;
+    height:30px;
+    font-size:19px;
+    color:#503;
+    line-height:40px;
+    text-align:center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background:#edea98;
+    color:red;
+}
